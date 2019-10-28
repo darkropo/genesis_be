@@ -6,7 +6,7 @@ class HttpCall
 
     def call(url)
         uri = URI(url)
-        response = Net::HTTP.get(uri)
-        return JSON.parse(response)
+        response = Net::HTTP.get_response(uri)        
+        return response
     end
 end
