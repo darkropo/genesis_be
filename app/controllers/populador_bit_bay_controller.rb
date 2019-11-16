@@ -15,6 +15,7 @@ class PopuladorBitBayController < ActionController::API
       if find_tid.present?
         since = find_tid[:tid]     
       else
+        ## esto no es timestamp es un id de row
         since = params[:since]
       end
 

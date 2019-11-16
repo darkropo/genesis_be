@@ -16,8 +16,8 @@ class PopuladorBitXController < ActionController::API
         if find_tid.present?
             since = find_tid[:timestamp]     
         else
-            #lo llevo a milisegundos por que asi esta en el api
-            since = params[:since].to_i * 1000 
+            #este timestamp es en milisegundos
+            since = params[:since].to_i
         end
 
         apix = HttpCall.new
@@ -28,7 +28,7 @@ class PopuladorBitXController < ActionController::API
 
         if respuesta.code.to_s === "200"
             res = JSON.parse(respuesta.body)
-                       
+                                   
             @result = collection.insert_many(res['trades'])
             #info log
             logger.debug "bitX_result_inserted_trades: " + @result.inserted_count.to_s
