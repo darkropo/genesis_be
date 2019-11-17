@@ -17,7 +17,7 @@ class PopuladorBitfinexController < ActionController::API
             since = find_tid[:MTS]     
         else
             ##este timestamp es en milisegundos
-            since = params[:start].to_i
+            since = params[:since].to_i
         end
 
         apix = HttpCall.new
