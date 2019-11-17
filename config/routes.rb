@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/populatebitbay', to: 'populador_bit_bay#populateBitBay'
   get '/populatebitx', to: 'populador_bit_x#populateBitX'
   get '/populatebitfinex', to: 'populador_bitfinex#populateBitfinex'
+  get '/populatebitflyer', to: 'populador_bitflyer#populateBitflyer'
+
 end

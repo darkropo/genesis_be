@@ -11,7 +11,7 @@ class PopuladorBitXController < ActionController::API
     def populateBitX
         conn = DatabaseConection.new
         client = conn.connect      
-        collection = client[:gen_bit_x]
+        collection = client[:gen_bit_x_eur]
         find_tid = collection.find().sort({timestamp:-1}).first
         if find_tid.present?
             since = find_tid[:timestamp]     
