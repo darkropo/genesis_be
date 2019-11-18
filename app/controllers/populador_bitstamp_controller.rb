@@ -2,8 +2,7 @@
 ###
 ## For Documentation
 # 
-# https://lightning.bitflyer.com/docs/playground?lang=en#GETv1%2Fexecutions%3Fproduct_code%3D%7Bproduct_code%7D%26count%3D%7Bcount%7D%26before%3D%7Bbefore%7D%26after%3D%7Bafter%7D/ruby
-
+# https://www.bitstamp.net/api/
 class PopuladorBitstampController < ActionController::API
     include Response
     include ExceptionHandler
