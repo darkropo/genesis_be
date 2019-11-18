@@ -31,7 +31,6 @@ class PopuladorBitstampController < ActionController::API
             end
           end
 
-          #@result = collection.insert_many(res)
           #info log
           logger.debug "bitstamp_result_inserted_trades: " + count.to_s
           @response = '{
