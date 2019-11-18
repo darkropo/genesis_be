@@ -18,25 +18,25 @@ Arrancar el servidor ruby con el siguente comando: rails server
 ### El parametro since es un id interno de la api de bitbay
 http://localhost:3000/populatebitbay?since=285000
 
-##BitX
+## BitX
 ### El parametro since es en unix timestamp en milisegundos
 http://localhost:3000/populatebitx?since=1546311600000
 
-##Bitfinex
+## Bitfinex
 ### El parametro since es en unix timestamp en milisegundos
 http://localhost:3000/populatebitfinex?since=1546311600000
 
-##Bitflyer
+## Bitflyer
 ### El parametro since es un id interno de la api de bitflyer
 http://localhost:3000/populatebitflyer?since=1350000000
 
-##Bitstamp
+## Bitstamp
 http://localhost:3000/populatebitstamp
 
-##Gemini
+## Gemini
 ### El parametro since es en unix timestamp en milisegundos
 http://localhost:3000/populategemini?since=1573516809
 
-##Kraken
+## Kraken
 ### El parametro since es en unix timestamp en milisegundos
 http://localhost:3000/populatekraken?since=1574098423508708579
