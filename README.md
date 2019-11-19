@@ -1,9 +1,12 @@
 # README
 
-Instalar ruby
+https://rubyinstaller.org/downloads/
 
-Instalar rails
+Descargar Ruby+Devkit 2.6.5-1 (x64)
 
+Instalar
+
+https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.1-signed.msi
 Instalar Mongodb
 
 Arracar el mongo en este url 127.0.0.1:27017
