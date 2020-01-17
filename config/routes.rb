@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/populatebitstamp', to: 'populador_bitstamp#populateBitstamp'
   get '/populategemini', to: 'populador_gemini#populateGemini'
   get '/populatekraken', to: 'populador_kraken#populateKraken'
+  get '/populatecoinbase', to: 'populador_coinbase#populateCoinbase'
 
 end
