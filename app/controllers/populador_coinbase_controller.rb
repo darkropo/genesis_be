@@ -30,15 +30,8 @@ class PopuladorCoinbaseController < ActionController::API
             since = params[:since].to_i
         end
 
-        rest_api = Coinbase::Exchange::AsyncClient.new(api_key, api_secret, api_pass)
-        EM.run {
-            EM.add_periodic_timer(10) {
-              rest_api.last_trade(product_id: "BTC-USD") do |resp|
-                res = JSON.parse(resp)
-                @result = collection.insert_many(res)
-              end
-            }
-          }
+        #rest_api = Coinbase::Exchange::AsyncClient.new(api_key, api_secret, api_pass)
+       
         #info log
         #logger.debug "coinbase_call:" + 'https://api.gemini.com/v1/trades/btcusd?limit_trades=500&timestamp='+since.to_s 
         #logger.debug "gemini_result_code: " + respuesta.code.to_s
