@@ -3,10 +3,8 @@
 ## For Documentation
 # https://currentmillis.com/ 
 # https://docs.bitfinex.com/reference#rest-public-trades
-require 'em/pure_ruby'
-require 'eventmachine'
 
-class PopuladorBitfinexController < ActionController::API
+class BitfinexController < ActionController::API
     include Response
     include ExceptionHandler
 
@@ -63,4 +61,5 @@ class PopuladorBitfinexController < ActionController::API
         
           json_response(@response)
     end
+
 end
